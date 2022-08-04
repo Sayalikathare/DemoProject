@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background: blue;
+            -webkit-animation: shape1 1s infinite;
+            animation-delay: 3s;
+        }
+        
+        @-webkit-keyframes shape1 {
+            20% {
+                background: red;
+                margin-left: 300px;
+                border-radius: 50px;
+            }
+            40% {
+                background: black;
+                margin-left: 500px;
+                border-radius: 0px;
+            }
+            60% {
+                background: yellow;
+                margin-left: 700px;
+                border-radius: 50px;
+            }
+            100% {
+                background: green;
+                margin-left: 900px;
+                border-radius: 0px;
+            }
+        }
+        
+        #div2 {
+            width: 100%;
+            height: 400px;
+            -webkit-animation: shape2 5s infinite;
+        }
+        
+        @-webkit-keyframes shape2 {
+            0% {
+                background: url('img11.jpg');
+            }
+            20% {
+                background: url('img12.jpg');
+            }
+            40% {
+                background: url('img13.jpg');
+            }
+            60% {
+                background: url('img14.jpg');
+            }
+            100% {
+                background: url('img15.jpg');
+            }
+        }
+        
+        @-webkit-keyframes shape3 {
+            10% {
+                -webkit-transform: rotate(100deg);
+                left: 240px;
+                top: 300px;
+            }
+            30% {
+                -webkit-transform: rotate(0deg);
+                left: 480px;
+                top: 0px;
+            }
+            50% {
+                -webkit-transform: rotate(100deg);
+                left: 720px;
+                top: 300px;
+            }
+            70% {
+                -webkit-transform: rotate(0deg);
+                left: 860px;
+                top: 0px;
+            }
+            80% {
+                -webkit-transform: rotate(100deg);
+                left: 1050px;
+                top: 300px;
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                left: 1070px;
+                top: 300px;
+            }
+        }
+        
+        img {
+            -webkit-animation: shape3 3s infinite;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <hr>
+    <div id="div2"></div>
+    <img src="img26.png" height="100px" width="100px">
+</body>
+
+</html>
